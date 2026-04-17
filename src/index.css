@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+/* Fixed header is out of flow; single in-flow child (.bank-screen__body) fills the viewport */
+#root {
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Inter', 'Open Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
